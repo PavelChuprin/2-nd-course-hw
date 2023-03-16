@@ -21,7 +21,7 @@
 	<section class="game-list-wrapper center">
 		<ul class="game-list">
 			<li class="game-list__item">
-				<a class="game-list__link" href="#">Игра 1</a>
+				<a onclick="firstGame();" class="game-list__link" href="#">Игра 1</a>
 			</li>
 			<li class="game-list__item">
 				<a class="game-list__link" href="#">Игра 2</a>
@@ -35,7 +35,7 @@
 		<div class="seasons-left">
 			<h2 class="seasons__title">Времена года!</h2>
 			<p class="seasons__text">Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы узнаете к какому времени года он относится</p>
-			<a class="seasons__link" href="#">
+			<a onclick="firstGame();" class="seasons__link" href="#">
 				<button class="seasons__btn">Играть!</button>
 			</a>
 		</div>
@@ -55,5 +55,18 @@
 			</a>
 		</div>
 	</div>
+	<div class="game center">
+		<h2 class="game__title">Игра в загадки</h2>
+		<p class="game__text">Компьютер загадывает загадку, вам необходимо ее угадать, если вы дадите не правильный ответ, то компьютер даст вам подсказку. У вас будет три попытки и две подсказки.</p>
+		<a class="game__link" href="#">
+			<button class="game__btn">Играть!</button>
+		</a>
+	</div>
+	<footer class="footer">
+		<p class="footer__text">
+			Все права защищены
+		</p>
+	</footer>
+	<script src="script.js"></script>
 </body>
 </html>
