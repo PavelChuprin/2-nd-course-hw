@@ -17,9 +17,14 @@ const taskThree = [1, 3, 5, 10, 20];
 console.log(taskThree.join(' ')); //преобразуем массив в строку и выводим эл-ты ч/з ' '.
 
 // #4
-const taskFour = [1, 1, 1];
-const taskFourNew = [taskFour, taskFour, taskFour];
-console.log(taskFourNew);
+let taskFour = [];
+for (let i = 0; i < 3; i++) {
+	taskFour[i] = []; // создаем подмассив
+	for (let j = 0; j < 3; j++) {
+		taskFour[i].push(1); // заполняем подмассив значениями
+	}
+}
+console.log(taskFour);
 
 // #5
 const taskFive = taskFour.slice(); //копируем массив из прошлого задания
