@@ -25,3 +25,17 @@ function firstGame() {
 		console.log('Недопустимое значение');
 	}
 }
+
+let arr = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+function twoGame() {
+	alert(arr = arr.sort(() => Math.random() - 0.5)); // перемешиваем эл-ты массива
+	let answer1 = prompt('Какое слово было первым?');
+	let answer2 = prompt('Какое слово было последним?');
+	if (answer1.toLowerCase() === arr[0].toLowerCase() && answer2.toLowerCase() === arr[arr.length-1].toLowerCase()) {
+		alert('Поздравляем, Вы угадали оба слова! :)');
+	}
+	else if (answer1.toLowerCase() === arr[0].toLowerCase() || answer2.toLowerCase() === arr[arr.length-1].toLowerCase()) {
+		alert('Вы были близки к победе! :|');
+	}
+	else alert('Вы ответили неверно :(')
+}
