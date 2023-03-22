@@ -4,13 +4,15 @@ console.log(str.toUpperCase());
 // преобразуем строку в верхний регистр toUpperCase (нижний - toLowerCase)
 
 //#2
-const arr = ['Кошка', 'Кит', 'Комар', 'Носорог'];
-let search = 'ко';
+const arr = [];
+function searchStart(arr, search){
 arr.forEach((item) => { 
 	if (item.toLowerCase().startsWith(search.toLowerCase())) {
 		console.log(item);
 	}
 })
+}
+searchStart(['Кошка', 'Кит', 'Комар', 'Носорог'], 'ко');
 // в массие arr пров-ем кажд. эл-т item на наличие подстроки search в начале назв-я
 // приводим эл-т item и искомую подстроку search к одному регистру
 
