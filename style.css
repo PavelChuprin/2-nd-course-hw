@@ -217,6 +217,69 @@ a {
   background: #EB443F;
 }
 
+.game {
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  background: url(img/bg-bottom.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.game__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 59px;
+  color: #FFFFFF;
+}
+.game__text {
+  text-align: center;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 32px;
+  color: #FFFFFF;
+}
+.game__btn {
+  display: inline-block;
+  width: 234px;
+  height: 49px;
+  background: #9C0332;
+  border-radius: 30px;
+  border: none;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #FFFFFF;
+  transition: background 0.5s;
+}
+.game__btn:hover {
+  cursor: url(img/cursor.svg), pointer;
+  background: #EB443F;
+}
+
+.footer {
+  height: 80px;
+  background-color: #000915;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__text {
+  color: #FFFFFF;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+}
+
 @media (min-width: 375px) and (max-width: 767px) {
   .header {
     align-items: center;
@@ -278,5 +341,13 @@ a {
   .remember__image {
     padding-top: 32px;
     max-width: 344px;
+  }
+  .game__title {
+    font-size: 32px;
+    line-height: 39px;
+  }
+  .game__text {
+    font-size: 14px;
+    line-height: 22px;
   }
 }/*# sourceMappingURL=style.css.map */
